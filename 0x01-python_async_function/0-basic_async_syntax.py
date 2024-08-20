@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Defines an asynchronous coroutine that takes in an integer argument 
+"""Defines an asynchronous coroutine that takes in an integer argument
 (max_delay) and returns a random float number between 0 and max_delay
 """
 import asyncio
