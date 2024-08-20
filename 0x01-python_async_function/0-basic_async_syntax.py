@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""0-basic_async_syntax.py module
+"""Defines an asynchronous coroutine that takes in an integer argument 
+(max_delay) and returns a random float number between 0 and max_delay
 """
 import asyncio
 import random
