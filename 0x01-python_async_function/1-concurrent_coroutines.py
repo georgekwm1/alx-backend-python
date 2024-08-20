@@ -13,4 +13,11 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     res = await asyncio.gather(*(wait_random(max_delay) for i in range(n)))
     for val in res:
         new_list.append(val)
+    list_len = len(new_list)
+
+    for i in range(list_len):
+        for j in range(0, list_len-i-1):
+            if new_list[j] > new_list[j+1]:
+                # Swap the elements
+                new_list[j], new_list[j+1] = new_list[j+1], new_list[j]
     return new_list
