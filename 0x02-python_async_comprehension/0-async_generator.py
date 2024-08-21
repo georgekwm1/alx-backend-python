@@ -5,7 +5,7 @@ import asyncio
 import random
 
 
-async def async_generator() -> float:
+async def async_generator() -> any:
     """ A coroutine that yields 10 numbers."""
     for i in range(10):
         yield random.uniform(0, 10)
